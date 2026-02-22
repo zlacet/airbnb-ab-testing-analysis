@@ -26,6 +26,12 @@ Experiment integrity was validated through:
   • Sample ratio mismatch testing
 
   • Covariate balance checks
+  
+Hypothesis
+
+        Null Hypothesis (H₀): There is no difference in booking completion rates between the control group and the price transparency treatment group.
+        
+        Alternative Hypothesis (H₁): The price transparency treatment increases booking completion rates relative to the control group.
 
 📊 Key Results
 
@@ -33,10 +39,9 @@ Primary Metric: Checkout Completion Rate
 
     • Control: 68.0%
     • Treatment: 70.8%
-    • Lift: +2.0 percentage points
     • p-value: 0.0012
 
-The difference is statistically significant at the 5% level.
+Checkout completion increased from 68.0% to 70.8% and was statistically significant (p = 0.0012).
 
 Secondary Metric: Overall Booking Conversion
 
@@ -44,7 +49,7 @@ Secondary Metric: Overall Booking Conversion
     • Treatment: 14.5%
     • p-value: 0.0075
 
-This result is also statistically significant.
+Overall booking conversion increased from 13.7% to 14.5% and was statistically significant (p = 0.0075).
 
 📉 Logistic Regression (Controlled Analysis)
 
@@ -57,8 +62,8 @@ Because the effect remains significant after accounting for listing characterist
 
 💼 Business Recommendation
 
-    Based on statistically significant improvements in checkout completion and overall booking conversion, 
-    the price transparency treatment should be rolled out in the New Orleans market.
+    The price transparency treatment demonstrates measurable improvements in booking performance. 
+    Rollout is recommended in the New Orleans market.
 
 Further testing across additional markets is recommended before a broader deployment.
 
