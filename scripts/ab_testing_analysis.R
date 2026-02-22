@@ -9,8 +9,14 @@ library(stringr)
 
 set.seed(123)
 
-# Load Data #
-nc_listings <- read.csv("no_airbnb.csv")
+# Load Data
+data_path <- file.path("data", "no_airbnb.csv")
+
+if (!file.exists(data_path)) {
+  stop("Dataset not found. Download from Kaggle and place it in the data/ folder as 'no_airbnb.csv'.")
+}
+
+nc_listings <- read.csv(data_path)
 
 listings <- nc_listings %>%
   mutate(
