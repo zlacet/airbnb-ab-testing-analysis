@@ -10,7 +10,7 @@ library(stringr)
 set.seed(123)
 
 # Load Data
-data_path <- file.path("data", "new_orleans_airbnb_listings")
+data_path <- file.path("data", "new_orleans_airbnb_listings.csv")
 
 if (!file.exists(data_path)) {
   stop("Dataset not found. Download from Kaggle and place it in the data/ folder as 'no_airbnb.csv'.")
